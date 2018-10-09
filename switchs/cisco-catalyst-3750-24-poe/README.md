@@ -33,7 +33,9 @@ J'ai pu trouver une communication cisco, indiquant qu' ios version 12.4, avait a
 
 ## Test 1 : se connecter une première fois au switch
 
-Par défaut, telnet et SSH sont désactivés, ce qui n'est pas surprenant. La seule manière d'entrer dans le système, est d'utiliser le port série du switch.
+Par défaut, telnet et SSH sont désactivés, ce qui n'est pas surprenant. La seule manière d'entrer dans le système, est d'utiliser le port série du switch. La doc cisco, pour la première connexion console, est présente ici : 
+https://www.cisco.com/c/en/us/support/docs/switches/catalyst-6000-series-switches/10600-9.html
+
 
 Pour se connecter à ce port série, on devra utiliser :
 
@@ -50,4 +52,77 @@ Pour se connecter à ce port série, on devra utiliser :
 * Sur le poste de travail auquel est relié le switch, on utilisera un logiciel de type Putty, pour établir une connexion de type com, avec le taux `BAUDS` adapté.
 
 
+
+## Extrait de la doc cisco: connect to console
+
+>  Connect a Terminal to Catalyst 1900/2820, 2900/3500XL, 2940, 2950/2955, 2970, 3550, 3560, and 3750 Series Switches
+> 
+> Use the supplied rollover cable and the DB-9 adapter to connect a PC to the switch console port. You need to provide an
+> RJ-45-to-DB-25 female DTE adapter if you want to connect the switch console port to a terminal. 
+> You can order a kit (part number ACS-DSBUASYN=) that contains the adapter from Cisco. The PC or terminal must
+> support VT100 terminal emulation. The terminal emulation software—frequently a PC application such as
+> Microsoft Windows HyperTerminal or Symantec Procomm Plus—makes possible the communication between the
+> switch and your PC or terminal during the setup program.
+> 
+> Follow these steps to connect the PC or terminal to the switch:
+> 
+  >   Be sure that you have configured your PC or terminal emulation software to communicate with the switch via hardware flow control.
+
+>     Configure the baud rate and character format of the PC or terminal to match these console port default characteristics:
+
+>       * 9600 baud
+>       * 8 data bits
+>       * 1 stop bit
+>       * No parity
+>     With the supplied rollover cable, insert the RJ-45 connector into the console port.
+
+>     9f.gif
+> 
+>     Attach the supplied RJ-45-to-DB-9 female DTE adapter to a PC, or attach an appropriate adapter to the terminal.
+> 
+>     Insert the other end of the supplied rollover cable in the attached adapter.
+> 
+>     Run the terminal emulation program, if you have a PC or a terminal.
+> 
+> Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
+> 
+|- Console Port (DTE) -|- RJ-45-to-RJ-45 Rollover Cable -|- 	RJ-45-to-DB-9 Terminal Adapter -|- Console Device -|
+|- Signal -|- RJ-45 Pin -|- RJ-45 Pin -|- DB-9 Pin -|- Signal -|
+RTS1 	1 	8 	8 	CTS2
+No connection 	2 	7 	6 	DSR
+TxD3 	3 	6 	2 	RxD4
+GND5 	4 	5 	5 	GND
+GND 	5 	4 	5 	GND
+RxD 	6 	3 	3 	TxD
+No connection 	7 	2 	4 	DTR6
+CTS 	8 	1 	7 	RTS
+
+1 RTS = Request To Send
+
+2 CTS = Clear To Send
+
+3 TxD = Transmit Data
+
+4 RxD = Receive Data
+
+5 GRD = Ground
+
+6 DTR = Data Terminal Ready
+Connect to a Terminal
+
+Use the thin, flat RJ-45-to-RJ-45 rollover cable and RJ-45-to-DB-25 female DTE adapter to connect the console port to a terminal. Table A-2 lists the pinouts for the console port, the RJ-45-to-RJ-45 rollover cable, and the RJ-45-to-DB-25 female DTE adapter.
+
+Note: The RJ-45-to-DB-25 female DTE adapter does not come with the switch. You can order a kit (part number ACS-DSBUASYN=) that contains this adapter from Cisco.
+Table A-2: Console Port Signaling and Cabling with a DB-25 Adapter
+
+Console Port (DTE) 	RJ-45-to-RJ-45 Rollover Cable 	RJ-45-to-DB-25 Terminal Adapter 	Console Device
+Signal 	RJ-45 Pin 	RJ-45 Pin 	DB-25 Pin 	Signal
+RTS 	1 	8 	5 	CTS
+No connection 	2 	7 	6 	DSR
+TxD 	3 	6 	3 	RxD
+GND 	4 	5 	7 	GND
+GND 	5 	4 	7 	GND
+RxD 	6 	3 	2 	TxD
+No connection 	7 	2 	20 	DTR
+CTS 	8 	1 	4 	RTS
  
