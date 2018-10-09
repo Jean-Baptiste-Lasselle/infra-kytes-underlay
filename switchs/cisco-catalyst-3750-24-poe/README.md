@@ -40,8 +40,16 @@ Pour se connecter à ce port série, on devra utiliser :
 * un câble série de type DB9 DB7 ( *com7* ... Le câble bleu dans les impressions écran ci-dessous), branché sur la sortie appelée sortie console sur le châssis
 ![câble série de type DB9 DB7](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-1-console-port-serie-db7-db9.png)
 * un câble convertisseur de série vers USB (Le câble blanc dans les impressions écran ci-dessous), reliant le câble série DB7/DB9 , à la prise usb de mon poste de travail
-![câble convertisseur de série vers USB](lien)
+![câble convertisseur de série vers USB]((https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-2-usb-to-serial.png)
+![câble convertisseur de série vers USB]((https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-3-usb-to-serial.png)
+
 * Sur le poste de travail auquel est relié le switch, on utilisera un logiciel de type Putty, pour établir une connexion de type com, avec le taux `BAUDS` adapté.
 
-
+ 	cables-necessaires-cisco-switch-1-console-port-serie-db7-db9.png 	Add files via upload 	a minute ago
+	cables-necessaires-cisco-switch-1-console-port-serie-db7-db9.xcf 	Add files via upload 	a minute ago
+	cables-necessaires-cisco-switch-2-usb-to-serial.png 	Add files via upload 	a minute ago
+	cables-necessaires-cisco-switch-2-usb-to-serial.xcf 	Add files via upload 	a minute ago
+	cables-necessaires-cisco-switch-3-usb-to-serial.png 	Add files via upload 	a minute ago
+	cables-necessaires-cisco-switch-3-usb-to-serial.xcf 	Add files via upload 	a minute ago
+	images.kytes 	Create images.kytes 	2 minutes ago
  
