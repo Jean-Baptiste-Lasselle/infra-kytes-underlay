@@ -52,6 +52,10 @@ Pour se connecter à ce port série, on devra utiliser :
 * Sur le poste de travail auquel est relié le switch, on utilisera un logiciel de type Putty, pour établir une connexion de type com, avec le taux `BAUDS` adapté.
 
 
+Mise à jour : un seul câble série usb vers RJ45 série/console
+
+![un seul câble série usb vers RJ45 série/console](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cable-usb-to-rs232-RJ45-pr-connexion-console-switchs.png)
+
 
 ## Extrait de la doc cisco: connect to console
 
@@ -77,7 +81,7 @@ Follow these steps to connect the PC or terminal to the switch:
   
 With the supplied rollover cable, insert the RJ-45 connector into the console port.
 
-![schema cisco switch connexion à la console série](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/schema-connect-to-console-cisco-3750-24ports-poe.gif)
+![schema cisco switch connexion à la console série](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/schema-connect-to-console-cisco-3750-24ports-poe.gif)
 
 Attach the supplied RJ-45-to-DB-9 female DTE adapter to a PC, or attach an appropriate adapter to the terminal.
 Insert the other end of the supplied rollover cable in the attached adapter.
