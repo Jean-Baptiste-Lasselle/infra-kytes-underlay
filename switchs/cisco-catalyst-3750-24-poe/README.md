@@ -88,7 +88,6 @@ Run the terminal emulation program, if you have a PC or a terminal.
 | Signal             | RJ-45 Pin     | RJ-45 Pin     | DB-9 Pin                        | Signal         |
 | RTS1 | 1 | 8 | 8 | CTS2 |
 | No connection | 2 | 7 | 6 | DSR |
-| No connection | 2 | 7 | 6 | DSR |
 | TxD3 | 3 | 6 | 2 | RxD4 |
 | GND5 | 4 | 5 | 5 | GND |
 | GND | 5 | 4 | 5 | GND |
