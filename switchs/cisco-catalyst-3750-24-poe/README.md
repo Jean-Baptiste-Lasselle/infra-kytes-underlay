@@ -49,12 +49,25 @@ Pour se connecter à ce port série, on devra utiliser :
 
 ![câble convertisseur de série vers USB](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-3-usb-to-serial.png)
 
-* Sur le poste de travail auquel est relié le switch, on utilisera un logiciel de type Putty, pour établir une connexion de type com, avec le taux `BAUDS` adapté.
+* Sur le poste de travail auquel est relié le switch, on utilisera un logiciel de type Putty, pour établir une connexion de type com, avec le taux `BAUDS` adapté. 
 
 
 Mise à jour : un seul câble série usb vers RJ45 série/console
 
 ![un seul câble série usb vers RJ45 série/console](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cable-usb-to-rs232-RJ45-pr-connexion-console-switchs.png)
+
+
+
+#### COnfiguration de la connexion série vers le switch, en mode console
+
+cf. https://www.cyberciti.biz/hardware/5-linux-unix-commands-for-connecting-to-the-serial-console/
+
+```bash
+jibl@pc-alienware-jib:~$ sudo dmesg | egrep --color 'serial|ttyS'
+[sudo] password for jibl: 
+[    0.720448] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+jibl@pc-alienware-jib:~$ 
+```
 
 
 ## Extrait de la doc cisco: connect to console
