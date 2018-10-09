@@ -74,7 +74,7 @@ Configure the baud rate and character format of the PC or terminal to match thes
       * 1 stop bit
       * No parity
 With the supplied rollover cable, insert the RJ-45 connector into the console port.
-    9f.gif
+    ![schema cisco switch connexion à la console série](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/schema-connect-to-console-cisco-3750-24ports-poe.gif)
 Attach the supplied RJ-45-to-DB-9 female DTE adapter to a PC, or attach an appropriate adapter to the terminal.
 Insert the other end of the supplied rollover cable in the attached adapter.
 Run the terminal emulation program, if you have a PC or a terminal.
