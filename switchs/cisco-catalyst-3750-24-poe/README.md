@@ -83,7 +83,7 @@ Run the terminal emulation program, if you have a PC or a terminal.
 
 #### Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
 
-| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable |  RJ-45-to-RJ-45 Rollover Cable | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
+| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable (extrémité 1) |  RJ-45-to-RJ-45 Rollover Cable (extrémité 2) | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
 | ------------------ | ------------- | ------------- | ------------------------------- | -------------- |
 | Signal             | RJ-45 Pin     | RJ-45 Pin     | DB-9 Pin                        | Signal         |
 | RTS1 | 1 | 8 | 8 | CTS2 |
