@@ -86,33 +86,30 @@ Pour se connecter à ce port série, on devra utiliser :
 > 
 > Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
 > 
-|- Console Port (DTE) -|- RJ-45-to-RJ-45 Rollover Cable -|- 	RJ-45-to-DB-9 Terminal Adapter -|- Console Device -|
+
+| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
 |---|---|---|---|
-|- Signal -|- RJ-45 Pin -|- RJ-45 Pin -|- DB-9 Pin -|- Signal -|
+| Signal | RJ-45 Pin | RJ-45 Pin | DB-9 Pin | Signal |
 |---|---|---|---|---|
-RTS1 	1 	8 	8 	CTS2
-
+| RTS1 | 1 | 8 | 8 | CTS2 |
+| No connection | 2 | 7 | 6 | DSR |
 |---|---|---|---|---|
-No connection 	2 	7 	6 	DSR
-TxD3 	3 	6 	2 	RxD4
-GND5 	4 	5 	5 	GND
-GND 	5 	4 	5 	GND
-RxD 	6 	3 	3 	TxD
-No connection 	7 	2 	4 	DTR6
-CTS 	8 	1 	7 	RTS
+| No connection | 2 | 7 | 6 | DSR |
+| TxD3 | 3 | 6 | 2 | RxD4 |
+| GND5 	4 	5 	5 	GND
+| GND 	5 	4 	5 	GND
+| RxD 	6 	3 	3 	TxD
+| No connection 	7 	2 	4 	DTR6
+| CTS 	8 	1 	7 	RTS
 
-1 RTS = Request To Send
+* 1 RTS = Request To Send
+* 2 CTS = Clear To Send
+* 3 TxD = Transmit Data
+* 4 RxD = Receive Data
+* 5 GRD = Ground
+* 6 DTR = Data Terminal Ready
 
-2 CTS = Clear To Send
-
-3 TxD = Transmit Data
-
-4 RxD = Receive Data
-
-5 GRD = Ground
-
-6 DTR = Data Terminal Ready
-Connect to a Terminal
+#### Connect to a Terminal
 
 Use the thin, flat RJ-45-to-RJ-45 rollover cable and RJ-45-to-DB-25 female DTE adapter to connect the console port to a terminal. Table A-2 lists the pinouts for the console port, the RJ-45-to-RJ-45 rollover cable, and the RJ-45-to-DB-25 female DTE adapter.
 
