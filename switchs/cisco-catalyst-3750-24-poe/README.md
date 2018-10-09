@@ -38,9 +38,9 @@ Par défaut, telnet et SSH sont désactivés, ce qui n'est pas surprenant. La se
 Pour se connecter à ce port série, on devra utiliser :
 
 * un câble série de type DB9 DB7 ( *com7* ... Le câble bleu dans les impressions écran ci-dessous), branché sur la sortie appelée sortie console sur le châssis
-[câble série de type DB9 DB7](lien)
+![câble série de type DB9 DB7](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-1-console-port-serie-db7-db9.png)
 * un câble convertisseur de série vers USB (Le câble blanc dans les impressions écran ci-dessous), reliant le câble série DB7/DB9 , à la prise usb de mon poste de travail
-[câble convertisseur de série vers USB](lien)
+![câble convertisseur de série vers USB](lien)
 * Sur le poste de travail auquel est relié le switch, on utilisera un logiciel de type Putty, pour établir une connexion de type com, avec le taux `BAUDS` adapté.
 
 
