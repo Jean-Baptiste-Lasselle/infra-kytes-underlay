@@ -43,9 +43,9 @@ Pour se connecter à ce port série, on devra utiliser :
 
 * un câble convertisseur de série vers USB (Le câble blanc dans les impressions écran ci-dessous), reliant le câble série DB7/DB9 , à la prise usb de mon poste de travail :
 
-![câble convertisseur de série vers USB]((https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-2-usb-to-serial.png)
+![câble convertisseur de série vers USB](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-2-usb-to-serial.png)
 
-![câble convertisseur de série vers USB]((https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-3-usb-to-serial.png)
+![câble convertisseur de série vers USB](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/switchs/cisco-catalyst-3750-24-poe/images/cables-necessaires-cisco-switch-3-usb-to-serial.png)
 
 * Sur le poste de travail auquel est relié le switch, on utilisera un logiciel de type Putty, pour établir une connexion de type com, avec le taux `BAUDS` adapté.
 
