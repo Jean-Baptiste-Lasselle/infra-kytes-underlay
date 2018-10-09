@@ -55,7 +55,7 @@ Pour se connecter à ce port série, on devra utiliser :
 
 ## Extrait de la doc cisco: connect to console
 
->  Connect a Terminal to Catalyst 1900/2820, 2900/3500XL, 2940, 2950/2955, 2970, 3550, 3560, and 3750 Series Switches
+>  #### Connect a Terminal to Catalyst 1900/2820, 2900/3500XL, 2940, 2950/2955, 2970, 3550, 3560, and 3750 Series Switches
 > 
 > Use the supplied rollover cable and the DB-9 adapter to connect a PC to the switch console port. You need to provide an
 > RJ-45-to-DB-25 female DTE adapter if you want to connect the switch console port to a terminal. 
