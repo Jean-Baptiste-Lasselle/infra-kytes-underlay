@@ -87,8 +87,12 @@ Pour se connecter à ce port série, on devra utiliser :
 > Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
 > 
 |- Console Port (DTE) -|- RJ-45-to-RJ-45 Rollover Cable -|- 	RJ-45-to-DB-9 Terminal Adapter -|- Console Device -|
+|---|---|---|---|
 |- Signal -|- RJ-45 Pin -|- RJ-45 Pin -|- DB-9 Pin -|- Signal -|
+|---|---|---|---|---|
 RTS1 	1 	8 	8 	CTS2
+
+|---|---|---|---|---|
 No connection 	2 	7 	6 	DSR
 TxD3 	3 	6 	2 	RxD4
 GND5 	4 	5 	5 	GND
