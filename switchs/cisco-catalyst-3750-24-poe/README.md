@@ -66,26 +66,20 @@ Pour se connecter à ce port série, on devra utiliser :
 > 
 > Follow these steps to connect the PC or terminal to the switch:
 > 
-  >   Be sure that you have configured your PC or terminal emulation software to communicate with the switch via hardware flow control.
+>   Be sure that you have configured your PC or terminal emulation software to communicate with the switch via hardware flow control.
 
->     Configure the baud rate and character format of the PC or terminal to match these console port default characteristics:
+Configure the baud rate and character format of the PC or terminal to match these console port default characteristics:
+      * 9600 baud
+      * 8 data bits
+      * 1 stop bit
+      * No parity
+With the supplied rollover cable, insert the RJ-45 connector into the console port.
+    9f.gif
+Attach the supplied RJ-45-to-DB-9 female DTE adapter to a PC, or attach an appropriate adapter to the terminal.
+Insert the other end of the supplied rollover cable in the attached adapter.
+Run the terminal emulation program, if you have a PC or a terminal.
 
->       * 9600 baud
->       * 8 data bits
->       * 1 stop bit
->       * No parity
->     With the supplied rollover cable, insert the RJ-45 connector into the console port.
-
->     9f.gif
-> 
->     Attach the supplied RJ-45-to-DB-9 female DTE adapter to a PC, or attach an appropriate adapter to the terminal.
-> 
->     Insert the other end of the supplied rollover cable in the attached adapter.
-> 
->     Run the terminal emulation program, if you have a PC or a terminal.
-> 
-> Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
-> 
+#### Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
 
 | Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
 |---|---|---|---|
