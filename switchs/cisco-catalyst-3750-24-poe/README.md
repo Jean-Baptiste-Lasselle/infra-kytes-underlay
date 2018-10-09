@@ -1,5 +1,5 @@
 
-# Relevés des étiquetage sur la machine
+# Relevés des étiquetages sur la machine
 
 Sur le châssis de la machine, les différents étiquetages indiquent les informations suivantes : 
 
