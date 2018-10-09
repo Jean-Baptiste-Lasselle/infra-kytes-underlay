@@ -85,9 +85,9 @@ Run the terminal emulation program, if you have a PC or a terminal.
 
 #### Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
 
-| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable (extrémité 1) |  RJ-45-to-RJ-45 Rollover Cable (extrémité 2) | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
-| ------------------ | ------------- | ------------- | ------------------------------- | -------------- |
-| Signal             | RJ-45 Pin     | RJ-45 Pin     | DB-9 Pin                        | Signal         |
+| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable (extrémité 1) | RJ-45-to-RJ-45 Rollover Cable (extrémité 2) | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
+| ------------------ | ------------------------------------------- | ------------------------------------------- | ---------------- | -------------- |
+| Signal | RJ-45 Pin | RJ-45 Pin | DB-9 Pin | Signal |
 | RTS1 | 1 | 8 | 8 | CTS2 |
 | No connection | 2 | 7 | 6 | DSR |
 | TxD3 | 3 | 6 | 2 | RxD4 |
@@ -111,7 +111,7 @@ Use the thin, flat RJ-45-to-RJ-45 rollover cable and RJ-45-to-DB-25 female DTE a
 Note: The RJ-45-to-DB-25 female DTE adapter does not come with the switch. You can order a kit (part number ACS-DSBUASYN=) that contains this adapter from Cisco.
 Table A-2: Console Port Signaling and Cabling with a DB-25 Adapter
 
-| Console Port (DTE)| RJ-45-to-RJ-45 Rollover Cable | RJ-45-to-DB-25 Terminal Adapter | Console Device |
+| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable | RJ-45-to-DB-25 Terminal Adapter | Console Device |
 | ------------------ | ------------- | ------------- | ------------------------------- | -------------- |
 | Signal | RJ-45 Pin | RJ-45 Pin | DB-25 Pin | Signal |
 | RTS | 1 | 8 | 5 | CTS |
