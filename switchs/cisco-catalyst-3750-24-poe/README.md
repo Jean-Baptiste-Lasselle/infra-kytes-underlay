@@ -55,24 +55,26 @@ Pour se connecter à ce port série, on devra utiliser :
 
 ## Extrait de la doc cisco: connect to console
 
->  #### Connect a Terminal to Catalyst 1900/2820, 2900/3500XL, 2940, 2950/2955, 2970, 3550, 3560, and 3750 Series Switches
-> 
-> Use the supplied rollover cable and the DB-9 adapter to connect a PC to the switch console port. You need to provide an
-> RJ-45-to-DB-25 female DTE adapter if you want to connect the switch console port to a terminal. 
-> You can order a kit (part number ACS-DSBUASYN=) that contains the adapter from Cisco. The PC or terminal must
-> support VT100 terminal emulation. The terminal emulation software—frequently a PC application such as
-> Microsoft Windows HyperTerminal or Symantec Procomm Plus—makes possible the communication between the
-> switch and your PC or terminal during the setup program.
-> 
-> Follow these steps to connect the PC or terminal to the switch:
-> 
->   Be sure that you have configured your PC or terminal emulation software to communicate with the switch via hardware flow control.
+ #### Connect a Terminal to Catalyst 1900/2820, 2900/3500XL, 2940, 2950/2955, 2970, 3550, 3560, and 3750 Series Switches
 
-Configure the baud rate and character format of the PC or terminal to match these console port default characteristics:
-      * 9600 baud
-      * 8 data bits
-      * 1 stop bit
-      * No parity
+Use the supplied rollover cable and the DB-9 adapter to connect a PC to the switch console port. You need to provide an
+RJ-45-to-DB-25 female DTE adapter if you want to connect the switch console port to a terminal. 
+You can order a kit (part number ACS-DSBUASYN=) that contains the adapter from Cisco. The PC or terminal must
+support VT100 terminal emulation. The terminal emulation software—frequently a PC application such as
+Microsoft Windows HyperTerminal or Symantec Procomm Plus—makes possible the communication between the
+switch and your PC or terminal during the setup program.
+
+Follow these steps to connect the PC or terminal to the switch:
+
+* Be sure that you have configured your PC or terminal emulation software to communicate with the switch via hardware flow control.
+
+* Configure the baud rate and character format of the PC or terminal to match these console port default characteristics:
+
+  * 9600 baud
+  * 8 data bits
+  * 1 stop bit
+  * No parity
+  
 With the supplied rollover cable, insert the RJ-45 connector into the console port.
     ![schema cisco switch connexion à la console série](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/schema-connect-to-console-cisco-3750-24ports-poe.gif)
 Attach the supplied RJ-45-to-DB-9 female DTE adapter to a PC, or attach an appropriate adapter to the terminal.
@@ -81,7 +83,7 @@ Run the terminal emulation program, if you have a PC or a terminal.
 
 #### Table A-1: Console Port Signaling and Cabling with a DB-9 Adapter
 
-| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
+| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable | | 	RJ-45-to-DB-9 Terminal Adapter | Console Device |
 | ------------------ | ------------- | ------------- | ------------------------------- | -------------- |
 | Signal             | RJ-45 Pin     | RJ-45 Pin     | DB-9 Pin                        | Signal         |
 | RTS1 | 1 | 8 | 8 | CTS2 |
