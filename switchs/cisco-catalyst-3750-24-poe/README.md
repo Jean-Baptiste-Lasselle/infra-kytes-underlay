@@ -111,7 +111,7 @@ Use the thin, flat RJ-45-to-RJ-45 rollover cable and RJ-45-to-DB-25 female DTE a
 Note: The RJ-45-to-DB-25 female DTE adapter does not come with the switch. You can order a kit (part number ACS-DSBUASYN=) that contains this adapter from Cisco.
 Table A-2: Console Port Signaling and Cabling with a DB-25 Adapter
 
-| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable | RJ-45-to-DB-25 Terminal Adapter | Console Device |
+| Console Port (DTE) | RJ-45-to-RJ-45 Rollover Cable | RJ-45-to-RJ-45 Rollover Cable | RJ-45-to-DB-25 Terminal Adapter | Console Device |
 | ------------------ | ------------- | ------------- | ------------------------------- | -------------- |
 | Signal | RJ-45 Pin | RJ-45 Pin | DB-25 Pin | Signal |
 | RTS | 1 | 8 | 5 | CTS |
