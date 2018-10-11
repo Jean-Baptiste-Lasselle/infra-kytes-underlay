@@ -53,9 +53,9 @@ Pour des environnements en indoor, on choisira donc une `magnetic-mount CDMA ant
 ![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.10.jpg)
 
 
-### Un exemple de serveur dédié
+### DEux exemples de serveurs matériels NTP dédiés
 
-Voic par exemple un MEINBERG (les impressions écran ci-dessous datent du 11 Octobre 2018) : 
+* Voici par exemple un MEINBERG (les impressions écran ci-dessous datent du 11 Octobre 2018) : 
 
 ![fiche ebay prix](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.5.png)
 ![face 1](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.1.png)
@@ -64,6 +64,18 @@ Voic par exemple un MEINBERG (les impressions écran ci-dessous datent du 11 Oct
 ![face 5](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.4.png)
 
 Il faut aussi compter l'achat d'u connecteur faisant du serveur un serveur NTP `stratum 1` . Par exemple :
+
+
+* Voici un autre exemple, cette fois-ci, le constrcuteur indique que le serveur a a la capacité de se synchroniser sur plusieurs émetteurs primaires de signal GPS : 
+
+![Exemple de serveur Spectracom](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-SPECTRACOM.exemple.1.png)
+
+Les spécificités approtées par le constrcuteur dans la conception de ce type matériel, en comparaison d'un serveur standard : 
+* une horloge matérielle sans doute très différente, avec résilience forte,
+* optimisation du processeur pour les calculs spéciofique à la gestion d'un référentiel temporel
+* capacité de la carte mère, via des périphériques incorporés, à se connecter et agir comme contrôleur des pluieurs récepteurs GPS.
+* un support OS de la sécurité, centré sur les protocoles autour d'NTP, et une intégration aux grand soutils de fédération d'identité, tels que Free IPA server.
+
 
 
 
