@@ -2,11 +2,34 @@
 
 ## Ce qu'apporte un serveur NTP matériel dédié
 
-Ces serveurs sont conçus pour y brancher un type de *récepteur* (`receiver`), par exemple : 
-* Une antenne satellite GPS
-* Une `magnetic-mount CDMA antenna` : 
+Ces serveurs sont conçus pour y brancher un type de *récepteur* (`receiver`)
+
 ![magnetic-mount CDMA antenna](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-exemple-recepteurs.1.png)
 
+*Quelques exemples de récepteurs*
+
+
+* Une antenne satellite GPS : 
+
+![magnetic-mount CDMA antenna](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/PROD_SonomaCdmaAntenna250.jpg)
+
+> This GPS Antenna Kit is included with each Time Server.  The standard kit has 50 ft (15 m) of antenna cable.
+
+> GPS antenna requires view-of-the-sky with roof or window-mount.  Expensive installation and maintenance costs are often required.
+
+
+* Une `magnetic-mount CDMA antenna` : 
+
+
+
+![magnetic-mount CDMA antenna](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/PROD_SonomaCdmaAntenna250.jpg)
+
+> The magnetic-mount CDMA antenna is included with each Time Server.  It has 12 ft (3.6m) of cable.
+
+> CDMA antenna works indoors!  You can simply place the antenna on top of your equipment rack inside your data center.
+
+
+Pour des environnements en indoor, on choisira donc une `magnetic-mount CDMA antenna`, et dans le cas où on aura acc_ès aux toits, on mettra en place une antenne GPS, qui nous permettra d'avoir beaucoup mieux, pour la géolocalisation, et offrir d'autres services internes, ou aux clients.
 
 Ce *récepteur* reçoit un signal d'horodatage, d'une source primaire comme une source gouvernenmentale, et fait ainsi du serveur un serveur NTP de strate 1 à part entière, et complètement privé.
 
