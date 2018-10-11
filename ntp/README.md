@@ -7,6 +7,12 @@
 Ces serveurs sont conçus pour y brancher un type de *récepteur* (*receiver*).
 Ce *récepteur* reçoit un signal d'horodatage, d'une source primaire comme une source gouvernenmentale, et fait ainsi du serveur un serveur NTP de strate 1 à part entière, et complètement privé.
 
+Une source possible de signal NTP pirmaire :  les émetteurs GPS. Les émetteurs GPS contiennent en général une horloge atomique, type d'horloge les plus précioses auxquelles pon puisse avoir accès aujourd'hui.
+
+Lorsque l'on parle d'un serveur NTP de strate 1, synchronisé sur une horloge atomique, il l'est la plupart du temps, via un signal GPS satellitaire, et l'horloge atomique contneue dans le satellite.
+
+
+
 ### Quelques exemples de récepteurs
 
 ![magnetic-mount CDMA antenna](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-exemple-recepteurs.1.png)
