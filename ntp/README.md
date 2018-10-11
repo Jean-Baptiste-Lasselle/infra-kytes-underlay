@@ -11,7 +11,7 @@ Ces serveurs sont conçus pour y brancher un type de *récepteur* (`receiver`)
 
 * Une antenne satellite GPS : 
 
-![magnetic-mount CDMA antenna](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/PROD_SonomaCdmaAntenna250.jpg)
+![Antenne GPS](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/AntennaKitTS.jpg)
 
 > This GPS Antenna Kit is included with each Time Server.  The standard kit has 50 ft (15 m) of antenna cable.
 
