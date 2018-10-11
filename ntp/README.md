@@ -4,11 +4,11 @@ Pour ce qui est de l'infrastructure matérielle, selon [une source bien connue](
 d'information est important pour l'activité opérationnelle d'une organisation, il est recommandé de faire usage d'un 
 serveur NTP interne au S.I., avec un serveur NTP matériel dédié, par exemple un MEINBERG (les impressions écrna ci-dessous datent du 11 Octobre 2018) : 
 
-![fiche ebay prix]()
-![face 1]()
-![face 2t]()
-![face 3]()
-![face 5]()
+![fiche ebay prix](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.5.png)
+![face 1](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.1.png)
+![face 2t](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.2.png)
+![face 3](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.3.png)
+![face 5](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.4.png)
 
 
 
