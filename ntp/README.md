@@ -1,15 +1,17 @@
 # NTP et infra matérielle
 
-## Ce qu'apporte un serveur NTP matériel dédié
+## Matériel
 
-Ces serveurs sont conçus pour y brancher un type de *récepteur* (`receiver`)
+### Pourquoi un serveur NTP matériel dédié
+
+Ces serveurs sont conçus pour y brancher un type de *récepteur* (*receiver*).
+Ce *récepteur* reçoit un signal d'horodatage, d'une source primaire comme une source gouvernenmentale, et fait ainsi du serveur un serveur NTP de strate 1 à part entière, et complètement privé.
+
+### Quelques exemples de récepteurs
 
 ![magnetic-mount CDMA antenna](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-exemple-recepteurs.1.png)
 
-*Quelques exemples de récepteurs*
-
-
-* Une antenne satellite GPS : 
+* Une antenne satellite GPS (cf. http://www.endruntechnologies.com/NTP-Servers/gps-cdma-ntp.htm ): 
 
 ![Antenne GPS](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/AntennaKitTS.jpg)
 
@@ -18,7 +20,7 @@ Ces serveurs sont conçus pour y brancher un type de *récepteur* (`receiver`)
 > GPS antenna requires view-of-the-sky with roof or window-mount.  Expensive installation and maintenance costs are often required.
 
 
-* Une `magnetic-mount CDMA antenna` : 
+* Une `magnetic-mount CDMA antenna` (cf. http://www.endruntechnologies.com/NTP-Servers/gps-cdma-ntp.htm ) : 
 
 
 
@@ -29,18 +31,29 @@ Ces serveurs sont conçus pour y brancher un type de *récepteur* (`receiver`)
 > CDMA antenna works indoors!  You can simply place the antenna on top of your equipment rack inside your data center.
 
 
+
+
 Pour des environnements en indoor, on choisira donc une `magnetic-mount CDMA antenna`, et dans le cas où on aura acc_ès aux toits, on mettra en place une antenne GPS, qui nous permettra d'avoir beaucoup mieux, pour la géolocalisation, et offrir d'autres services internes, ou aux clients.
 
-Ce *récepteur* reçoit un signal d'horodatage, d'une source primaire comme une source gouvernenmentale, et fait ainsi du serveur un serveur NTP de strate 1 à part entière, et complètement privé.
+
+* Un récepteur GPS MEINBERG
+
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/recepteur-GPS-MEINBERG-exemple.png)
+
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.jpg)
+
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.2.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.3.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.4.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.5.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.6.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.7.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.8.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.9.jpg)
+![Page Ebay](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/exemple-recepteur-GPS-MEINBERG/s-l1600.10.jpg)
 
 
-
-
-## Quand un matériel NTP dédié est-il nécessaire?
-
-Pour ce qui est de l'infrastructure matérielle, selon [une source bien connue](https://www.pool.ntp.org/en/use.html), lorsque l'accuité des horloges d'un système d'information est important pour l'activité opérationnelle d'une organisation, il est recommandé de faire usage d'un serveur NTP interne au S.I., avec un serveur NTP matériel dédié
-
-## Un exemple de serveur dédié
+### Un exemple de serveur dédié
 
 Voic par exemple un MEINBERG (les impressions écran ci-dessous datent du 11 Octobre 2018) : 
 
@@ -61,7 +74,14 @@ Il faut aussi compter l'achat d'u connecteur faisant du serveur un serveur NTP `
 * https://spectracom.com/products-services/precision-timing#anchor-2172
 
 
-# Références
+
+
+
+## Opérationnel: Quand un matériel NTP dédié est-il nécessaire?
+
+Pour ce qui est de l'infrastructure matérielle, selon [une source bien connue](https://www.pool.ntp.org/en/use.html), lorsque l'accuité des horloges d'un système d'information est important pour l'activité opérationnelle d'une organisation, il est recommandé de faire usage d'un serveur NTP interne au S.I., avec un serveur NTP matériel dédié.
+
+# Références et bonnes pratiques
 
 https://www.pool.ntp.org/en/use.html
 
