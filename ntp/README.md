@@ -1,8 +1,25 @@
 # NTP et infra matérielle
 
-Pour ce qui est de l'infrastructure matérielle, selon [une source bien connue](https://www.pool.ntp.org/en/use.html), lorsque l'accuité des horloges d'un système 
-d'information est important pour l'activité opérationnelle d'une organisation, il est recommandé de faire usage d'un 
-serveur NTP interne au S.I., avec un serveur NTP matériel dédié, par exemple un MEINBERG (les impressions écrna ci-dessous datent du 11 Octobre 2018) : 
+## Ce qu'apporte un serveur NTP matériel dédié
+
+Ces serveurs sont conçus pour y brancher un type de *récepteur* (`receiver`), par exemple : 
+* Une antenne satellite GPS
+* Une `magnetic-mount CDMA antenna` : 
+![magnetic-mount CDMA antenna](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-exemple-recepteurs.1.png)
+
+
+Ce *récepteur* reçoit un signal d'horodatage, d'une source primaire comme une source gouvernenmentale, et fait ainsi du serveur un serveur NTP de strate 1 à part entière, et complètement privé.
+
+
+
+
+## Quand un matériel NTP dédié est-il nécessaire?
+
+Pour ce qui est de l'infrastructure matérielle, selon [une source bien connue](https://www.pool.ntp.org/en/use.html), lorsque l'accuité des horloges d'un système d'information est important pour l'activité opérationnelle d'une organisation, il est recommandé de faire usage d'un serveur NTP interne au S.I., avec un serveur NTP matériel dédié
+
+## Un exemple de serveur dédié
+
+Voic par exemple un MEINBERG (les impressions écran ci-dessous datent du 11 Octobre 2018) : 
 
 ![fiche ebay prix](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.5.png)
 ![face 1](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.1.png)
@@ -10,6 +27,15 @@ serveur NTP interne au S.I., avec un serveur NTP matériel dédié, par exemple 
 ![face 3](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.3.png)
 ![face 5](https://github.com/Jean-Baptiste-Lasselle/infra-kytes-underlay/raw/master/ntp/images/serveurs-NTP-MEINBERG.exemple.ebay.4.png)
 
+Il faut aussi compter l'achat d'u connecteur faisant du serveur un serveur NTP `stratum 1` . Par exemple :
+
+
+
+*Autres Serveurs matériels dédiés NTP*
+
+* http://www.endruntechnologies.com/NTP-Servers/gps-cdma-ntp.htm
+* https://www.meinbergglobal.com/english/products/ntp-time-server.htm
+* https://spectracom.com/products-services/precision-timing#anchor-2172
 
 
 # Références
@@ -32,10 +58,3 @@ https://www.pool.ntp.org/en/use.html
 > If you are synchronising a network to pool.ntp.org, please set up one of your computers as a time server and synchronize the other computers to that one. (you'll have some reading to do - it's not difficult though. And there's always the comp.protocols.time.ntp newsgroup.)
 
 > At this point, I'd like to thank those donating their time and timeservers to this network.
-
-
-Serveurs matériels dédiés NTP : 
-
-* http://www.endruntechnologies.com/NTP-Servers/gps-cdma-ntp.htm
-* https://www.meinbergglobal.com/english/products/ntp-time-server.htm
-* https://spectracom.com/products-services/precision-timing#anchor-2172
